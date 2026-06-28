@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Marc Lavoie cybersecurity portfolio featuring SOC analyst projects, SIEM labs, detection rules, cloud security labs, Windows hardening, scripting projects, training, and resume information.">
   <title>Marc Lavoie | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=detection-rules-20260628">
+  <link rel="stylesheet" href="styles.css?v=detection-rules-layout-20260628">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -217,15 +217,17 @@
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">Detection Rules</p>
-          <h2>Readable detection examples with test notes and safe sample data.</h2>
-          <p>
-            Detection content should use synthetic examples only and avoid real incident artifacts, internal hostnames, internal IP addresses, or private environment details.
-          </p>
+          <h2>Detection rule examples across major SIEM platforms.</h2>
         </div>
 
         <div class="project-grid detection-rule-grid">
           <!-- CrowdStrike detection rule image -->
           <article class="project-card detection-rule-card">
+            <div class="project-content detection-rule-heading">
+              <h3>CrowdStrike Detection Rule Example</h3>
+              <p>Phishing with Endpoint Follow-Up using a Falcon Next-Gen SIEM correlation rule.</p>
+            </div>
+
             <a 
               class="project-image-link detection-rule-image-link" 
               href="assets/detection-rules/crowdstrike-detection-rule.svg" 
@@ -238,30 +240,15 @@
                 class="project-image detection-rule-image"
                 loading="lazy">
             </a>
-
-            <div class="project-content">
-              <h3>CrowdStrike Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a Falcon Next-Gen SIEM correlation rule.</p>
-
-              <dl>
-                <div>
-                  <dt>Platform</dt>
-                  <dd>CrowdStrike Falcon Next-Gen SIEM</dd>
-                </div>
-                <div>
-                  <dt>Rule Type</dt>
-                  <dd>Correlation rule</dd>
-                </div>
-                <div>
-                  <dt>Detection Focus</dt>
-                  <dd>Delivered phishing email followed by endpoint or network activity.</dd>
-                </div>
-              </dl>
-            </div>
           </article>
 
           <!-- IBM QRadar detection rule image -->
           <article class="project-card detection-rule-card">
+            <div class="project-content detection-rule-heading">
+              <h3>IBM QRadar Detection Rule Example</h3>
+              <p>Phishing with Endpoint Follow-Up using a Custom Rule Engine correlation rule.</p>
+            </div>
+
             <a 
               class="project-image-link detection-rule-image-link" 
               href="assets/detection-rules/ibm-qradar-detection-rule.svg" 
@@ -274,30 +261,15 @@
                 class="project-image detection-rule-image"
                 loading="lazy">
             </a>
-
-            <div class="project-content">
-              <h3>IBM QRadar Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a Custom Rule Engine correlation rule.</p>
-
-              <dl>
-                <div>
-                  <dt>Platform</dt>
-                  <dd>IBM QRadar SIEM</dd>
-                </div>
-                <div>
-                  <dt>Rule Type</dt>
-                  <dd>CRE correlation rule</dd>
-                </div>
-                <div>
-                  <dt>Detection Focus</dt>
-                  <dd>Delivered phishing email followed by endpoint or network activity.</dd>
-                </div>
-              </dl>
-            </div>
           </article>
 
           <!-- Google Chronicle detection rule image -->
           <article class="project-card detection-rule-card">
+            <div class="project-content detection-rule-heading">
+              <h3>Google Chronicle SIEM Detection Rule Example</h3>
+              <p>Phishing with Endpoint Follow-Up using a JSON wrapper with YARA-L detection logic.</p>
+            </div>
+
             <a 
               class="project-image-link detection-rule-image-link" 
               href="assets/detection-rules/google-chronicle-detection-rule.svg" 
@@ -310,30 +282,15 @@
                 class="project-image detection-rule-image"
                 loading="lazy">
             </a>
-
-            <div class="project-content">
-              <h3>Google Chronicle SIEM Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a JSON wrapper with YARA-L detection logic.</p>
-
-              <dl>
-                <div>
-                  <dt>Platform</dt>
-                  <dd>Google Security Operations / Chronicle SIEM</dd>
-                </div>
-                <div>
-                  <dt>Rule Format</dt>
-                  <dd>JSON deployment wrapper with YARA-L detection logic</dd>
-                </div>
-                <div>
-                  <dt>Detection Focus</dt>
-                  <dd>User interaction after delivered phishing email activity.</dd>
-                </div>
-              </dl>
-            </div>
           </article>
 
           <!-- Microsoft Sentinel detection rule image -->
           <article class="project-card detection-rule-card">
+            <div class="project-content detection-rule-heading">
+              <h3>Microsoft Sentinel Detection Rule Example</h3>
+              <p>Delivered phishing email detection built as a full scheduled analytics rule.</p>
+            </div>
+
             <a 
               class="project-image-link detection-rule-image-link" 
               href="assets/detection-rules/microsoft-sentinel-detection-rule.svg" 
@@ -346,26 +303,6 @@
                 class="project-image detection-rule-image"
                 loading="lazy">
             </a>
-
-            <div class="project-content">
-              <h3>Microsoft Sentinel Detection Rule Example</h3>
-              <p>Delivered phishing email detection built as a full scheduled analytics rule.</p>
-
-              <dl>
-                <div>
-                  <dt>Platform</dt>
-                  <dd>Microsoft Sentinel</dd>
-                </div>
-                <div>
-                  <dt>Rule Type</dt>
-                  <dd>Scheduled analytics rule</dd>
-                </div>
-                <div>
-                  <dt>Detection Focus</dt>
-                  <dd>Delivered phishing or malware email converted into a Sentinel incident.</dd>
-                </div>
-              </dl>
-            </div>
           </article>
         </div>
       </div>
