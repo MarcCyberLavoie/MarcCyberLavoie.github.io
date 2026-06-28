@@ -420,32 +420,58 @@ h3 {
   overflow: hidden;
 }
 
-.project-card:hover {
-  border-color: rgba(75, 180, 255, 0.55);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+.project-card-wide {
+  grid-column: 1 / -1;
 }
 
-.project-image-link {
-  display: block;
-  width: 100%;
-  overflow: hidden;
+.detection-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--border);
-  background: #020617;
+  background: #0a1017;
 }
 
-.project-image-link:focus-visible {
-  outline: 3px solid var(--warning);
-  outline-offset: -3px;
+.detection-example {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.6rem;
+  min-width: 0;
+  margin: 0;
 }
 
-.project-image {
+.detection-example a {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(75, 180, 255, 0.32);
+  border-radius: 6px;
+  background: #030811;
+}
+
+.detection-example a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.detection-example img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 180ms ease;
 }
 
-.project-image-link:hover .project-image {
-  filter: brightness(1.08);
+.detection-example a:hover img {
+  transform: scale(1.015);
+}
+
+.detection-example figcaption {
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-align: center;
 }
 
 .screenshot-placeholder {
@@ -693,6 +719,10 @@ h3 {
   .credentials-grid {
     grid-template-columns: 1fr;
   }
+
+  .detection-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 560px) {
@@ -706,7 +736,8 @@ h3 {
   }
 
   .nav-links.is-open,
-  .skills-list {
+  .skills-list,
+  .detection-gallery {
     grid-template-columns: 1fr;
   }
 
