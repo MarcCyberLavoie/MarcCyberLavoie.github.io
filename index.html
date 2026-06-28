@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Marc Lavoie cybersecurity portfolio featuring SOC analyst projects, SIEM labs, detection rules, cloud security labs, Windows hardening, scripting projects, training, and resume information.">
   <title>Marc Lavoie | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=detection-rules-layout-20260628">
+  <link rel="stylesheet" href="styles.css?v=credentials-20260627">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -217,92 +217,55 @@
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">Detection Rules</p>
-          <h2>Detection rule examples across major SIEM platforms.</h2>
+          <h2>Readable detection examples with test notes and safe sample data.</h2>
+          <p>
+            Detection content should use synthetic examples only and avoid real incident artifacts, internal hostnames, internal IP addresses, or private environment details.
+          </p>
         </div>
 
-        <div class="project-grid detection-rule-grid">
-          <!-- CrowdStrike detection rule image -->
-          <article class="project-card detection-rule-card">
-            <div class="project-content detection-rule-heading">
-              <h3>CrowdStrike Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a Falcon Next-Gen SIEM correlation rule.</p>
+        <div class="project-grid">
+          <article class="project-card project-card-wide">
+            <div class="detection-gallery" aria-label="Cross-platform detection rule examples">
+              <figure class="detection-example">
+                <a href="assets/detection-rules/microsoft-sentinel-detection-rule.svg" target="_blank" rel="noopener" aria-label="View the full Microsoft Sentinel detection rule example">
+                  <img src="assets/detection-rules/microsoft-sentinel-detection-rule.svg" alt="Microsoft Sentinel delivered phishing email detection rule example" loading="lazy" decoding="async">
+                </a>
+                <figcaption>Microsoft Sentinel</figcaption>
+              </figure>
+              <figure class="detection-example">
+                <a href="assets/detection-rules/ibm-qradar-detection-rule.svg" target="_blank" rel="noopener" aria-label="View the full IBM QRadar detection rule example">
+                  <img src="assets/detection-rules/ibm-qradar-detection-rule.svg" alt="IBM QRadar phishing with endpoint follow-up detection rule example" loading="lazy" decoding="async">
+                </a>
+                <figcaption>IBM QRadar</figcaption>
+              </figure>
+              <figure class="detection-example">
+                <a href="assets/detection-rules/crowdstrike-detection-rule.svg" target="_blank" rel="noopener" aria-label="View the full CrowdStrike detection rule example">
+                  <img src="assets/detection-rules/crowdstrike-detection-rule.svg" alt="CrowdStrike phishing with endpoint follow-up detection rule example" loading="lazy" decoding="async">
+                </a>
+                <figcaption>CrowdStrike Falcon</figcaption>
+              </figure>
+              <figure class="detection-example">
+                <a href="assets/detection-rules/google-chronicle-detection-rule.svg" target="_blank" rel="noopener" aria-label="View the full Google Chronicle detection rule example">
+                  <img src="assets/detection-rules/google-chronicle-detection-rule.svg" alt="Google Chronicle phishing with endpoint follow-up detection rule example" loading="lazy" decoding="async">
+                </a>
+                <figcaption>Google SecOps / Chronicle</figcaption>
+              </figure>
             </div>
-
-            <a 
-              class="project-image-link detection-rule-image-link" 
-              href="assets/detection-rules/crowdstrike-detection-rule.svg" 
-              target="_blank" 
-              rel="noopener"
-              aria-label="Open CrowdStrike detection rule image full size">
-              <img 
-                src="assets/detection-rules/crowdstrike-detection-rule.svg" 
-                alt="CrowdStrike Detection Rule Example: Phishing with Endpoint Follow-Up"
-                class="project-image detection-rule-image"
-                loading="lazy">
-            </a>
-          </article>
-
-          <!-- IBM QRadar detection rule image -->
-          <article class="project-card detection-rule-card">
-            <div class="project-content detection-rule-heading">
-              <h3>IBM QRadar Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a Custom Rule Engine correlation rule.</p>
+            <div class="project-content">
+              <h3>Cross-Platform Detection Rule Examples</h3>
+              <p>Phishing detection examples showing rule metadata, severity, data sources, MITRE ATT&amp;CK mapping, correlation logic, entity grouping, and analyst response guidance.</p>
+              <dl>
+                <div>
+                  <dt>Tools used</dt>
+                  <dd>Microsoft Sentinel, IBM QRadar, CrowdStrike Falcon, Google SecOps / Chronicle, MITRE ATT&amp;CK</dd>
+                </div>
+                <div>
+                  <dt>Skill demonstrated</dt>
+                  <dd>Cross-platform detection engineering, correlation logic, and SOC response design</dd>
+                </div>
+              </dl>
+              <a class="project-link" href="https://github.com/MarcCyberLavoie/detection-rules-placeholder" target="_blank" rel="noopener">Placeholder GitHub Repository</a>
             </div>
-
-            <a 
-              class="project-image-link detection-rule-image-link" 
-              href="assets/detection-rules/ibm-qradar-detection-rule.svg" 
-              target="_blank" 
-              rel="noopener"
-              aria-label="Open IBM QRadar detection rule image full size">
-              <img 
-                src="assets/detection-rules/ibm-qradar-detection-rule.svg" 
-                alt="IBM QRadar Detection Rule Example: Phishing with Endpoint Follow-Up"
-                class="project-image detection-rule-image"
-                loading="lazy">
-            </a>
-          </article>
-
-          <!-- Google Chronicle detection rule image -->
-          <article class="project-card detection-rule-card">
-            <div class="project-content detection-rule-heading">
-              <h3>Google Chronicle SIEM Detection Rule Example</h3>
-              <p>Phishing with Endpoint Follow-Up using a JSON wrapper with YARA-L detection logic.</p>
-            </div>
-
-            <a 
-              class="project-image-link detection-rule-image-link" 
-              href="assets/detection-rules/google-chronicle-detection-rule.svg" 
-              target="_blank" 
-              rel="noopener"
-              aria-label="Open Google Chronicle detection rule image full size">
-              <img 
-                src="assets/detection-rules/google-chronicle-detection-rule.svg" 
-                alt="Google Chronicle SIEM Detection Rule Example: Phishing with Endpoint Follow-Up"
-                class="project-image detection-rule-image"
-                loading="lazy">
-            </a>
-          </article>
-
-          <!-- Microsoft Sentinel detection rule image -->
-          <article class="project-card detection-rule-card">
-            <div class="project-content detection-rule-heading">
-              <h3>Microsoft Sentinel Detection Rule Example</h3>
-              <p>Delivered phishing email detection built as a full scheduled analytics rule.</p>
-            </div>
-
-            <a 
-              class="project-image-link detection-rule-image-link" 
-              href="assets/detection-rules/microsoft-sentinel-detection-rule.svg" 
-              target="_blank" 
-              rel="noopener"
-              aria-label="Open Microsoft Sentinel detection rule image full size">
-              <img 
-                src="assets/detection-rules/microsoft-sentinel-detection-rule.svg" 
-                alt="Microsoft Sentinel Detection Rule Example: Delivered Phishing Email"
-                class="project-image detection-rule-image"
-                loading="lazy">
-            </a>
           </article>
         </div>
       </div>
@@ -507,7 +470,7 @@
         <div class="contact-list" aria-label="Contact placeholders">
           <a href="mailto:public-contact@example.com">public-contact@example.com</a>
           <a href="https://github.com/MarcCyberLavoie" target="_blank" rel="noopener">GitHub Profile Placeholder</a>
-          <a href="https://www.linkedin.com/in/marc-lavoie" target="_blank" rel="noopener">https://www.linkedin.com/in/marc-lavoieLinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/marc-lavoie" target="_blank" rel="noopener">LinkedIn Profile</a>
         </div>
       </div>
     </section>
