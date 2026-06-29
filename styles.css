@@ -234,10 +234,25 @@ main {
   display: grid;
   gap: 1rem;
   margin-bottom: 2.25rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .section-heading p {
   max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .eyebrow {
@@ -459,6 +474,7 @@ main {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
   gap: 2rem;
   align-items: start;
+  text-align: left;
 }
 
 .about-layout > div {
@@ -471,6 +487,7 @@ main {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
+  text-align: left;
 }
 
 .skills-list {
@@ -761,6 +778,13 @@ main {
   display: grid;
   gap: 1rem;
   padding: 1.15rem;
+  text-align: left;
+}
+
+.project-content h3,
+.project-content p,
+.project-content dl {
+  text-align: left;
 }
 
 .project-content dl {
@@ -779,11 +803,13 @@ main {
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .project-content dd {
   margin: 0;
   color: var(--text-muted);
+  text-align: left;
 }
 
 .project-link {
@@ -878,6 +904,7 @@ main {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
+  text-align: left;
 }
 
 .contact-list a {
