@@ -271,7 +271,7 @@ main {
   padding: 5rem 0;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(8, 11, 16, 0.95) 0%, rgba(8, 11, 16, 0.9) 48%, rgba(8, 11, 16, 0.96) 100%),
+    linear-gradient(180deg, rgba(8, 11, 16, 0.96) 0%, rgba(8, 11, 16, 0.92) 48%, rgba(8, 11, 16, 0.96) 100%),
     radial-gradient(circle at center, rgba(75, 180, 255, 0.08), transparent 42%),
     var(--bg);
 }
@@ -282,18 +282,18 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 43%;
+  width: 48%;
   background-image: url("assets/hero%20background.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.34;
+  background-size: auto 88%;
+  opacity: 0.46;
   pointer-events: none;
   z-index: 0;
 }
 
 .hero::before {
   left: 0;
-  background-position: left center;
+  background-position: right center;
   transform: scaleX(-1);
   transform-origin: center;
 }
@@ -331,6 +331,7 @@ main {
 .hero-copy h1 {
   text-align: center;
   margin: 0;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
 }
 
 .hero-lede {
@@ -338,6 +339,7 @@ main {
   margin: 0 auto;
   text-align: center;
   font-size: clamp(1.05rem, 2vw, 1.28rem);
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.72);
 }
 
 .hero-actions {
@@ -998,8 +1000,8 @@ main {
   .hero::before,
   .hero::after {
     width: 50%;
-    opacity: 0.18;
-    background-size: cover;
+    opacity: 0.2;
+    background-size: auto 100%;
   }
 
   .hero-grid,
